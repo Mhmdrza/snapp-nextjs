@@ -37,7 +37,7 @@ function Landing({data}) {
         </div>
           <h2>یک اپلیکیشن، برای تمام نیاز‌ها</h2>
         <div className={styles.vendors}>
-          {data.map(obj=><p className={styles.vechorCard}>
+          {data.map(obj=><p key={obj.title} className={styles.vechorCard}>
             <h3>{obj.title}</h3>
             <span>{obj.body}</span>
           </p>)}

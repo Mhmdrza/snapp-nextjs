@@ -13,7 +13,7 @@ export default function Home() {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const data = await fetch('https://jsonplaceholder.typicode.com/posts').then(r=>r.json())
   return {
     props: {}, // will be passed to the page component as props
