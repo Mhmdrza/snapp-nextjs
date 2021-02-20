@@ -114,6 +114,24 @@
   height: 1em;
 }
 
+.vendors {
+  background-color: #f2f5f8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.vechorCard {
+  background-color: #fff;
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+box-shadow: 2px 2px 2px rgba(187, 187, 187, 0.301);
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
