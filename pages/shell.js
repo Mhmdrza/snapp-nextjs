@@ -12,3 +12,10 @@ export default function Home() {
       <Landing data={data}/>
   )
 }
+
+export async function getStaticProps(context) {
+  const data = await fetch('https://jsonplaceholder.typicode.com/posts').then(r=>r.json())
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}

@@ -8,7 +8,7 @@
 }
 
 .main {
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -113,7 +113,18 @@
 .logo {
   height: 1em;
 }
-
+.header {
+  padding: 2%;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.intro {
+  background-color: #22a958;
+  color: white;
+  width: 100%;
+}
 .vendors {
   background-color: #f2f5f8;
   display: flex;
@@ -123,7 +134,9 @@
 
 .vechorCard {
   background-color: #fff;
-  max-width: 300px;
+  width: 240px;
+  border-radius: 8px;
+  padding: 8px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
